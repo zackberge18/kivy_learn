@@ -1,0 +1,22 @@
+MDBoxLayout:
+    orientation:"vertical"
+
+    MDToolbar:
+        title:"Our top toll bar"
+        left_action_items:[["menu",lambda x: app.presser()]]
+        right_action_items:[["dots-vertical"]]
+    MDLabel:
+        id:my_label
+        text:"soME STUFF"
+        halign: "center"
+
+    MDBottomAppBar:
+        MDToolbar:
+            title:"fuck me"
+            icon:"git"
+            type:"bottom"
+            #mode:"free-end"
+            #mode:"end"
+            mode:"center"
+            on_action_button:app.presser()
+

@@ -1,0 +1,16 @@
+<MyLayout>
+
+    BoxLayout:
+        orientation:"vertical"
+        size: root.width,root.height
+
+        Label:
+            id:slider_label
+            text:"Slide the Slider"
+
+        Slider:
+            min:1
+            max:100
+            step:1
+            orientation:"vertical"
+            on_value:root.slide_it(*args)
